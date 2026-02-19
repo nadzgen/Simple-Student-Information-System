@@ -5,10 +5,14 @@ import java.awt.*;
 public class MainMenuUI extends JFrame {
 
     public MainMenuUI() {
+
         setTitle("Student Information System");
         setSize(600, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        ImageIcon mainIcon = new ImageIcon("src/images/students.png");
+        setIconImage(mainIcon.getImage());
 
         JPanel panel = new JPanel();
         panel.setBackground(Color.WHITE);

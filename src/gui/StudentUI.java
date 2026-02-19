@@ -21,7 +21,7 @@ public class StudentUI extends JFrame {
         JTextField idField = new JTextField();
         JTextField firstNameField = new JTextField();
         JTextField lastNameField = new JTextField();
-        JComboBox<String> programBox = new JComboBox<>();
+        JTextField programCodeField = new JTextField();
         JComboBox<String> yearBox = new JComboBox<>(new String[]{"1","2","3","4"});
         JComboBox<String> genderBox = new JComboBox<>(new String[]{"Male","Female"});
 
@@ -32,7 +32,7 @@ public class StudentUI extends JFrame {
         formPanel.add(new JLabel("Last Name"));
         formPanel.add(lastNameField);
         formPanel.add(new JLabel("Program Code"));
-        formPanel.add(programBox);
+        formPanel.add(programCodeField);
         formPanel.add(new JLabel("Year"));
         formPanel.add(yearBox);
         formPanel.add(new JLabel("Gender"));

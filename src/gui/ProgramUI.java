@@ -16,8 +16,10 @@ public class ProgramUI extends JFrame {
         JPanel formPanel = new JPanel(new GridLayout(2,2,16,16));
         formPanel.setBorder(BorderFactory.createTitledBorder("Program Information"));
 
-        JTextField codeField = new JTextField();
-        JTextField nameField = new JTextField();
+        JTextField codeField = new JTextField(20);
+        codeField.setColumns(20);
+        JTextField nameField = new JTextField(20);
+        nameField.setColumns(20);
         JComboBox<String> collegeBox = new JComboBox<>();
 
         formPanel.add(new JLabel("Program Code"));
